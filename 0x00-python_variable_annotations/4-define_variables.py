@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-int: a = 1
-float: pi = 3.14
-bool: i_understand_annotations = True
-str: school = "Holberton"
+a: int = 1
+pi: float = 3.14
+i_understand_annotations: bool = True
+school: str = "Holberton"
