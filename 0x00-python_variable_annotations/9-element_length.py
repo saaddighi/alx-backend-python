@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from typing import List
+from typing import List, Tuple
 
-def element_length(lst: List[int]) -> List[int]:
+def element_length(lst: List[str]) -> List[Tuple[str, int]]:
     return [(i, len(i)) for i in lst]
+
