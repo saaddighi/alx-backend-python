@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import asyncio
-import typing
+from typing import List
 import bisect
 
 
