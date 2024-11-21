@@ -11,7 +11,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     res = []
     for i in range(0, n):
         wait_random(max_delay)
-        res.append(max_delay)
+        res.append(wait_random.max_delay)
     sorted_list = []
     for element in res:
         bisect.insort(sorted_list, element)
