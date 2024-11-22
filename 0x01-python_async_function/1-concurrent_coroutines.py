@@ -10,8 +10,8 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 async def wait_n(n: int, max_delay: int) -> List[float]:
     res = []
     for i in range(0, n):
-        wait_random(max_delay)
-        res.append(wait_random.max_delay)
+        t = await wait_random(max_delay)
+        res.append(t)
     sorted_list = []
     for element in res:
         bisect.insort(sorted_list, element)
