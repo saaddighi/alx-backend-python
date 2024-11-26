@@ -9,7 +9,7 @@ import time
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime(): 
+async def measure_runtime() -> float:
     """a courotine that oroutine that will execute async_comprehension
     four times in parallel using asyncio.gather and returns the runtime"""
     start_time = time.time()
