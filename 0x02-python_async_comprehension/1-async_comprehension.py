@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 
 import asyncio
 import random
@@ -12,7 +12,6 @@ async def async_comprehension() -> List[float]:
     """a courotine that collect 10 random numbers using an async
     comprehensing over async_generator,then return the 10 random numbers"""
     task = async_generator()
-    lst = []
-    lst = [lst.append(i) async for i in task]
+    lst = [i async for i in task]
 
     return lst
